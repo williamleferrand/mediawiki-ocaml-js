@@ -1,0 +1,31 @@
+Here is an experimental mediawiki to/from html translator.
+
+You can have a glance at it on http://www.myrilion.com:8080/wysiwyg?article=Open_innovation
+
+The translation engine is written in OCaml, using the Ulex library. Then, it is compiled to javascript to produce a code usable on client side, in a web application.
+
+REQUIREMENTS: 
+
+ * OCaml ( www.ocaml.org, tested with 3.11.1 )
+ * OCamlbuild (shipped with OCaml)
+ * OCamljs ( http://github.com/jaked/ocamljs )
+
+REMARKS: 
+
+This is an experimental work. It was done mainly to show how an high level strictly typed language such as OCaml could be use to create efficient applications on Javascript. However, there is still **a lot** of room for improvements, including: 
+
+ * Moving from OCamljs to Js_of_ocaml (http://ocsigen.org/js_of_ocaml/), a new js compiler published a few weeks ago
+ * Implementing some lacking features on the syntax
+ * Checking the cleanliness of the diffs.
+
+The current approach is very straighforward : we convert the markup to html and then we convert the html to markup. This was constrained by the editor itself, which is the 'standard' editor from the google closure library. It is possible to have a more advanced strategy that enforces the relation between the markup and the html. 
+
+Even if the code can be compiled to js, it is much more comfortable to develop first a standalone application that processes text files. 
+
+Feel free to shoot a mail at { william.le-ferrand@polytechnique.edu, william@myrilion.com } if you want more information about this project or if you want to join its development! 
+
+Thanks,
+
+William
+Paris, the 14th of August, 2010.
+

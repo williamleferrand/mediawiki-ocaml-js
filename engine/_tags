@@ -1,0 +1,3 @@
+<*.ml>: pkg_ocamljs,pkg_dom,pkg_javascript
+<*.js>: pkg_ocamljs,pkg_dom,pkg_javascript
+<*.ml>: pkg_ulex, syntax_camlp4o
