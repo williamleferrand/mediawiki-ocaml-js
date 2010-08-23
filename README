@@ -14,9 +14,10 @@ REMARKS:
 
 This is an experimental work. It was done mainly to show how an high level strictly typed language such as OCaml could be use to create efficient applications on Javascript. However, there is still **a lot** of room for improvements, including: 
 
- * Moving from OCamljs to Js_of_ocaml (http://ocsigen.org/js_of_ocaml/), a new js compiler published a few weeks ago
  * Implementing some lacking features on the syntax
  * Checking the cleanliness of the diffs.
+ * Compare OCamljs to Js_of_ocaml (http://ocsigen.org/js_of_ocaml/), a new js compiler published a few weeks ago
+ 
 
 The current approach is very straighforward : we convert the markup to html and then we convert the html to markup. This was constrained by the editor itself, which is the 'standard' editor from the google closure library. It is possible to have a more advanced strategy that enforces the relation between the markup and the html. 
 
